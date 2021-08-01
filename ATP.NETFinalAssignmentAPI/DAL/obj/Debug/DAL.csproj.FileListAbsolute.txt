@@ -1,0 +1,12 @@
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\DAL.dll.config
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\DAL.dll
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\DAL.pdb
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\EntityFramework.dll
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\EntityFramework.xml
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\obj\Debug\DAL.dll
+F:\University\ATP.Net\FINAL\Assignment\ATP.NETFinalAssignmentAPI\DAL\obj\Debug\DAL.pdb

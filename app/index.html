@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <!--<base href="/" />-->
+    <meta charset="utf-8">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png"> -->
+	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Demo</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="content/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Menu CSS -->
+    
+    <!-- animation CSS -->
+    <link href="content/css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="content/css/style_admin.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="content/css/colors/default.css" id="theme" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script href="content/bootstrap/js/modal.js"></script>
+    <script src="app/lib/angular.min.js"></script>
+
+    <script src="app/lib/angular.route.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <title></title>
+  </head>
+  <body ng-app="myApp" class="fix-header">
+    <div id="wrapper">
+      <div ng-include="'views/inc/top_nav.html'"></div>
+      <div ng-include="'views/inc/side_nav.html'"></div>
+      <div ng-view></div>
+    </div>
+  </body>
+</html>
+
+<!-- Add Services here -->
+<script src="app/services/ajax.js"></script>
+
+
+<!-- Add Controllers here -->
+<script src="app/routes.js"></script>
+<script src="app/controllers/demo.js"></script>
+<script src="app/controllers/demo2.js"></script>
+<script src="app/controllers/products.js"></script>
+<script src="app/controllers/category.js"></script>
+<script src="app/controllers/order.js"></script>

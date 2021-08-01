@@ -1,0 +1,74 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">{{page_title}}</h4>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">{{page_title}}</li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /row -->
+        <div class="center pull-left">
+            <p>Order Id: {{order_details.id}}</p>
+            <p>Date: {{order_details.created_at}}</p>
+            <p>Amount: {{total - order_details.delivery_charge}}</p>
+            <p>Status: {{order_details.status}}</p>
+            <a href="#!/add_product" class="btn btn-danger btn-block waves-effect waves-light">Add Product</a>
+            <br><br><br>
+        </div>
+        <div class="center pull-right app-search hidden-sm hidden-xs m-r-10">
+            <input type="text" placeholder="Search..." class="form-control"> 
+            <a href="">
+                <i class="fa fa-search"></i>
+            </a> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>                               
+                                <tr ng-repeat="product in order_details.products">
+                                    <td>{{product.id}}</td>
+                                    <td>{{product.name}}</td>
+                                    <td>{{product.qty}}</td>
+                                    <td>{{product.price}}</td>	
+                                </tr>  
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Delivery Charge: {{order_details.delivery_charge}}</td>	
+                                </tr>  
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total: {{total}}</td>	
+                                </tr>                           
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center"> 2021 &copy; InraBd </footer>
+    </div>

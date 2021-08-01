@@ -1,0 +1,60 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">{{page_title}}</h4>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">Products</li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /row -->
+        <div class="center pull-left">
+            <a href="/app/#!/add_category" class="btn btn-danger btn-block waves-effect waves-light">Add Product</a>
+            <br><br><br>
+        </div>
+        <div class="center pull-right app-search hidden-sm hidden-xs m-r-10">
+            <input type="text" placeholder="Search..." class="form-control"> 
+            <a href="">
+                <i class="fa fa-search"></i>
+            </a> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Image</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="all_categories" ng-repeat="cat in data">                                
+                                <tr>
+                                    <td>{{cat.id}}</td>
+                                    <td>{{cat.name}}</td>
+                                    <td><img src="{{cat.image}}" width=32px height=32px></td>	
+                                    <td><button ng-click="">Edit</button></td>
+                                    <td><button id="{{cat.id}}" ng-click="deleteCategory($event)" class="btn btn-danger">Delete</button></td>	
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center"> 2021 &copy; InraBd </footer>
+    </div>
